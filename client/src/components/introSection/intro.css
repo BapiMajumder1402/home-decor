@@ -1,0 +1,5 @@
+.intro > h6 {font-weight: 500;background-image:  linear-gradient(45deg,  #cfbd16, #c56912);text-transform: uppercase;-webkit-background-clip: text;color: transparent;}
+.intro >.boldTxt{font-weight: 700;font-size: 2.3rem;color: #252525;}
+.intro .lightTxt{font-weight: 200;font-size: 2.6rem;color: #3a3a3a;}
+.intro > .lineBox {display: flex;flex-direction: column;}
+.intro{display: flex;flex-direction: column; gap: .6rem;}

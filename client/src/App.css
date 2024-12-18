@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Yeseva+One&display=swap');
+*{margin: 0;padding:0;box-sizing: border-box;}
+body{font-family: Poppins;}
+button{background:  linear-gradient(45deg, #cfbd16, #c56912);padding: .8rem 1.5rem;text-transform: uppercase; color: #fff; font-weight: 500;outline: none;border: none; width: max-content;font-size: .8rem;letter-spacing: 2px;}
+h1,h2,h3,h4,h5,h6{margin: 0 !important;padding: 0;}
+a{text-decoration: none;}
+input,select,textarea{border: 0; outline: none;background: transparent;}
+textarea{height: 8rem;}
+section{padding: 4rem 6rem;}
+ul, li {padding: 0;margin: 0;list-style: none;}
+.titleDiv{display: flex; flex-direction: column ;align-items: center; gap: 0.6rem; margin-bottom: 3rem;}
+.titleDiv h2{font-size: 2.4rem; font-weight: 600;}
+.pages-head{display: flex; justify-content: center; gap: 1rem; flex-direction: column;align-items: center;margin-bottom: 3rem;}
+.listData{display: flex;flex-wrap:wrap;gap: 2%;}
+.listCard{width: 23%;padding: 0; border-bottom: 3px solid goldenrod; margin-bottom: 1rem; box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;border-radius: 8px 8px 0 0;transition: box-shadow 0.5s ease,transform 0.3s ease; }
+.listCard:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;}
+.listBot{display: flex;flex-direction: column; gap: .6rem; padding: 1rem;}
+.listBot p{color: #575757; font-weight: 300; font-size: 1.2rem;margin: 0;line-height: 170%;}
+.listBot h2{font-size: 1.5rem;}
+.listImg img{max-width: 100%;}
+.listImg {
+  position: relative;
+  width: 100%; /* Adjust based on your layout */
+  height: 200px; /* Set a fixed height or use responsive units like vh */
+  overflow: hidden; /* Ensures the image doesn't overflow its container */
+  border-radius: 8px; /* Optional for rounded corners */
+  background-color: #f0f0f0; /* Fallback background color */
+}
+.reviewBox {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+  text-align: center;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+.reviewBox:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 12px;
+}
+
+.review-image {
+  width: 100%;
+  height: 300px; /* Fixed height */
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background-color: #f9f9f9; /* Placeholder background for missing images */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image scales without distortion */
+  display: block;
+}
+
+.reviewBot {
+  padding: 1rem;
+}
+
+.right-text {
+  display: block;
+  text-align: right;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  color: #333;
+}
+
+
+.design-and-operation-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fills the container without distortion */
+  display: block; /* Removes inline spacing if the image is inside an inline container */
+}
+.details-right{display: flex;flex-direction: column;align-items: flex-start;justify-content: center;}
+.details-right p{font-size: 1.3rem}
+.details-page{margin-top: 6rem;}
+.listBanner{min-height: 50vh;background: url('/pageBanner.jpg');background-repeat: no-repeat;background-position: center;background-size: cover;padding: 0 5rem;}
+.listBannerData{display: flex;flex-direction: column;justify-content: center;width: 45%;height: 50vh;gap: 1.5rem;}
+.listBannerData h1{font-size: 3rem; color: #fff; font-weight: 600;}
+.listBannerData p{font-size: 1.2rem; color: #fff; font-weight: 200;}
+.individual-page-description{background: #F0F9FF;padding: 2rem; border-radius: 5px;margin-bottom: 4rem;}
+
+.about-img{background: url('/aboutImg.jpg');background-repeat: no-repeat;background-position: center;background-size: cover;padding:  5rem;}
+.about-img h2{color: #fff !important;}
+
+/* CONTACT */
+.contact .lightTxt{width: 50%;}
+.contact .col-md-7{display: flex;flex-direction: column;justify-content: center;gap: 1.5rem;}
+.contact .col-md-5 {padding: 4rem 3rem ;}
+.contact .col-md-5 h4{font-weight: 600;}
+.contact .col-md-5 form{display: flex;flex-direction: column;gap: 1.5rem;}
+.contact .col-md-5 form button{font-size: 1.3rem; font-weight: 600;margin-top: 1rem;}
+.contact .col-md-5 form div{background: #fff;padding: 1rem;display: flex;gap: 1rem;border-bottom: 2px solid; 
+    border-image:linear-gradient(45deg, #cfbd16, #c56912)1; }
+.contact .col-md-5 form div textarea,.contact .col-md-5 form div input, .contact .col-md-5 form div select{width: 100%;}
+.contact-data p{display: flex; gap: .7rem;font-size: 1.1rem;}
+.contactBot{background: url('/contactBot.png');background-repeat: no-repeat;background-position: center;background-size: cover;border-radius: 20px;padding: 4rem;}
+.contactBot h5{color: #fff;text-transform: uppercase;letter-spacing: 6px;font-size: .8rem;}
+.contactBot h2{color: #fff; font-weight: 600;font-size: 2.5rem;}
+/* .details-section{padding: 2rem 5rem;} */
+.item-image{width: 40%;}
+.item-image img{width: 80%;}
+.itemHead{margin-bottom: 1rem;}
+.itemHead h3{font-weight: 600; font-size: 2rem;}
+.item-text p{font-size: 1.2rem;font-weight: 200; line-height: 175%;}
+.item-text{width: 60%;display: flex;align-items: flex-start;flex-direction: column;justify-content: center;padding-right: 10rem;}
+.detail-item{display: flex;flex-direction: row;padding: 3rem 5rem;}
+.detail-item.evenItem{display: flex;flex-direction: row-reverse;background-color: #F0F9FF}
+
+/* LOADING */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #cfbd16, #c56912);
+    color: #ffffff;
+  }
+  .loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-top: 5px solid #ffffff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  .loading-text {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  button.wp{background: transparent !important;padding: 0;}
+  button.wp img{max-height: 2.5rem;}
+  .show{display: block;}
+  .hide{display: none;}
+
+
+
+  @media (max-width:500px) {
+    .res-show{display: block;}
+    .res-hide{display: none;}
+    section{padding: 1.2rem 1rem;}
+    .design ul{padding: 1rem;font-size: 1.1rem;}
+    .gal-row{gap: 1.2rem;}
+    .mt{margin-top: 1.2rem;}
+    .pt{padding-top: 1.2rem;}
+    button.navbar-toggler{background: transparent !important;}
+    .intro .boldTxt{font-size: 1.5rem !important;}
+    .intro .lightTxt{font-size: 1.8rem !important;}
+    .design ul li{font-size: 1.1rem;}
+    .listBanner{padding: 2rem;}
+    .listBanner h1{font-size: 1.5rem;}
+    .listBanner p{font-size: 1.2rem;}
+    .listBannerData{width: 100%;}
+    .design ul li img{height: 1.3rem;}
+    .listBanner{height: 40vh;}
+    .listCard{width: 100%;}
+    .contact .lightTxt{width: 100%;}
+  }

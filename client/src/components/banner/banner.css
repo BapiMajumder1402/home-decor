@@ -1,0 +1,67 @@
+.bannerImg {
+    background-image: url('./banner2.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    padding: 0 6rem;
+  }
+  .banner {
+    position: relative;
+    height: 70vh;
+    padding: 0 6rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  .bannerOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:url('/overlay.png');
+    z-index: -1; 
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bannerVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+  }
+  .bannerTxt {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    background: rgba(255, 242, 205, 0.5); /* Light translucent background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    padding: 1.5rem; /* Optional: Add padding for spacing inside the element */
+    border-radius: 8px; /* Optional: Add rounded corners */
+  }
+  
+  .bannerTxt h3{font-weight: 700;color: #252525;font-size: 2.3rem;}
+  .bannerTxt h2{font-weight: 300;color: #212121;font-size: 2.6rem;}
+  .bannerTxt p{font-weight: 200;color: #242424; font-size: 1.2rem;}
+  .bannerTxt button{margin-top: 2rem;}
+
+  /* .bannerBot img{height: 40rem;} */
+  .bannerRight{display: flex; flex-direction: column; justify-content: center;height: 100%;}
+  .bannerBotImg{max-height: 42rem;max-width: 100%;}
+    
+  @media (max-width: 500px) {
+    .bannerImg{padding:1rem;height: 80vh;}
+    .bannerTxt{width: 100%;padding: 1rem;}
+    .bannerTxt h3{font-size: 1.5rem;}
+    .bannerTxt h2{font-size: 1.5rem;}
+    .mt{margin-top: 1.2rem;}
+  }
